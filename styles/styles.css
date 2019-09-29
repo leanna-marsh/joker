@@ -52,6 +52,7 @@ nav a:hover {
 main {
   margin-left: 5px;
   margin-right: 5px;
+  max-width: 1440px;
 }
 
 header h1 {
@@ -309,6 +310,18 @@ footer h3 {
 
     .small {
       font-size: 30px;
+    }
+
+    h2 {
+      font-size: 50px;
+    }
+
+    .tix {
+      font-size: 30px;
+    }
+
+    .press a {
+      font-size: 40px;
     }
 
     header h1 {
