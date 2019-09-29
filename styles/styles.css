@@ -13,7 +13,7 @@ nav {
   margin-top: 0;
   display: flex;
   padding-top: 8px;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -69,12 +69,14 @@ header p {
 h1 {
   font-family: 'Anton', sans-serif;
   font-size: 50px;
+  color: #121212;
 }
 
 h2 {
   font-family: 'Anton', sans-serif;
   font-size: 40px;
   text-align: center;
+  color: #121212;
 }
 
 footer h3 {
@@ -85,6 +87,7 @@ footer h3 {
 h3 {
   font-family: 'Anton', sans-serif;
   font-size: 30px;
+  color: #121212;
 }
 
 p {
@@ -153,6 +156,11 @@ max-height: 100%
   text-align: center;
   margin-bottom: 10px;
   font-size: 45px;
+}
+
+.poster {
+  max-height: 100%;
+  text-align: center;
 }
 
 .quote {
@@ -255,6 +263,24 @@ footer h3 {
     padding-right: 10px;
   }
 
+  .short {
+    text-align: center;
+  }
+
+  .about h3 {
+    text-align: center;
+  }
+
+  .trailer {
+    background-color: #9B0F14;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .trailer h2 {
+    color: #F4F4F6;
+  }
+
   .video-container iframe,
   .video-container object,
   .video-container embed {
@@ -266,3 +292,57 @@ footer h3 {
     text-align: left;
     margin-left: 45%;
   }
+
+  @media only screen and (min-width: 900px) {
+
+    .hero {
+      position: absolute;
+      top: 25%;
+      right: 5%;
+      align-items: right;
+      text-align: right;
+    }
+
+    .logo {
+      width: 100%;
+    }
+
+    .small {
+      font-size: 30px;
+    }
+
+    header h1 {
+      font-size: 50px;
+    }
+
+  .aboutBox {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 50px 8px 50px 8px;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.info {
+    grid-column: 2;
+    width: 100%;
+    grid-row: 1;
+}
+
+.poster {
+  max-height: 100%;
+}
+
+.short {
+  text-align: left;
+}
+
+.about h3 {
+  text-align: left;
+}
+
+.quote {
+  margin-left: 60%;
+}
