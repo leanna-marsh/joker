@@ -159,7 +159,6 @@ max-height: 100%
 }
 
 .poster {
-  max-height: 100%;
   text-align: center;
 }
 
@@ -344,7 +343,9 @@ footer h3 {
 }
 
 .poster {
-  max-height: 100%;
+  grid-column: 1;
+  width: 100%;
+  grid-row: 1;
 }
 
 .short {
